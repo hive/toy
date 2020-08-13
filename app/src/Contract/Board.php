@@ -5,13 +5,6 @@ namespace Hive\Toy\Contract;
 interface Board
 {
     /**
-     * Board constructor.
-     * @param int $x size of the x axis
-     * @param int $y size of the y axis
-     */
-    public function __construct(int $x, int $y);
-
-    /**
      * Get the size of the X axis
      * @return int
      */

@@ -9,40 +9,29 @@ namespace Hive\Toy;
 class Board implements Contract\Board
 {
     /**
-     * X Axis Coordinate
+     * X Axis Size
      * @var int
      */
     private $x;
 
     /**
-     * Y Axis Coordinate
+     * Y Axis Size
      * @var int
      */
     private $y;
 
     /**
-     * Board constructor.
-     * @param int $x
-     * @param int $y
-     */
-    public function __construct(int $x, int $y)
-    {
-        $this->x = $x;
-        $this->y = $y;
-    }
-
-    /**
-     * Returns a specific Coordinate
+     * Returns a specific axis size
      * @param $axis
-     * @return mixed
+     * @return int
+     * @throws Exception\InvalidBoardAxis
      */
-    public function getAxis($axis)
+    public function get($axis): int
     {
-        if (in_array($axis, ['x', 'y'])) {
-            return $this->$axis;
-        } else {
-            throw new invalidBoardAxis();
+        if (!in_array($axis, get_object_vars($this))) {
+            throw new Exception\InvalidBoardAxis($axis);
         }
+        return $this->$axis;
     }
 
     /**

@@ -1,168 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="84" assertions="50" errors="0" warnings="0" failures="0" skipped="34" time="0.010906">
-    <testsuite name="Sanity" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.001963">
-      <testsuite name="Hive\Toy\Test\SanityTest" file="/Users/jamie/Containers/toy/app/tests/unit/SanityTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.001963">
-        <testcase name="test_sanity_isTrue" class="Hive\Toy\Test\SanityTest" classname="Hive.Toy.Test.SanityTest" file="/Users/jamie/Containers/toy/app/tests/unit/SanityTest.php" line="7" assertions="1" time="0.001963"/>
+  <testsuite name="" tests="76" assertions="69" errors="1" warnings="0" failures="19" skipped="6" time="0.012954">
+    <testsuite name="Sanity" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.002023">
+      <testsuite name="Hive\Toy\Test\SanityTest" file="/Users/jamie/Containers/toy/app/tests/unit/SanityTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.002023">
+        <testcase name="test_sanity_isTrue" class="Hive\Toy\Test\SanityTest" classname="Hive.Toy.Test.SanityTest" file="/Users/jamie/Containers/toy/app/tests/unit/SanityTest.php" line="7" assertions="1" time="0.002023"/>
       </testsuite>
     </testsuite>
-    <testsuite name="All" tests="83" assertions="49" errors="0" warnings="0" failures="0" skipped="34" time="0.008943">
-      <testsuite name="Hive\Toy\Test\BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" tests="28" assertions="0" errors="0" warnings="0" failures="0" skipped="28" time="0.002052">
-        <testcase name="test_construct_withNullCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="13" assertions="0" time="0.000322">
-          <skipped/>
+    <testsuite name="All" tests="75" assertions="68" errors="1" warnings="0" failures="19" skipped="6" time="0.010930">
+      <testsuite name="Hive\Toy\Test\BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" tests="20" assertions="19" errors="1" warnings="0" failures="19" skipped="0" time="0.002785">
+        <testcase name="test_construct_withNullCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="15" assertions="0" time="0.000930">
+          <error type="PHPUnit\Framework\RiskyTestError">Risky Test
+</error>
         </testcase>
-        <testcase name="test_construct_withValidCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="18" assertions="0" time="0.000062">
-          <skipped/>
+        <testcase name="test_getAxis_withNullCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="25" assertions="1" time="0.000096">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getAxis_withNullCoordinateArguments_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:27
+</failure>
         </testcase>
-        <testcase name="test_construct_withStringCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="23" assertions="0" time="0.000058">
-          <skipped/>
+        <testcase name="test_getX_withNullCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="30" assertions="1" time="0.000059">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getX_withNullCoordinateArguments_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:32
+</failure>
         </testcase>
-        <testcase name="test_construct_withFalseCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="28" assertions="0" time="0.000054">
-          <skipped/>
+        <testcase name="test_getY_withNullCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="35" assertions="1" time="0.000060">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getY_withNullCoordinateArguments_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:37
+</failure>
         </testcase>
-        <testcase name="test_construct_withZeroCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="34" assertions="0" time="0.000053">
-          <skipped/>
+        <testcase name="test_getAxis_withValidCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="40" assertions="1" time="0.000056">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getAxis_withValidCoordinateArguments_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:42
+</failure>
         </testcase>
-        <testcase name="test_construct_withZeroXCoordinateArgument_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="39" assertions="0" time="0.000069">
-          <skipped/>
+        <testcase name="test_getX_withValidCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="45" assertions="1" time="0.000089">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getX_withValidCoordinateArguments_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:47
+</failure>
         </testcase>
-        <testcase name="test_construct_withZeroYCoordinateArgument_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="44" assertions="0" time="0.000053">
-          <skipped/>
+        <testcase name="test_getY_withValidCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="50" assertions="1" time="0.000059">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getY_withValidCoordinateArguments_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:52
+</failure>
         </testcase>
-        <testcase name="test_construct_withNegativeCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="49" assertions="0" time="0.000067">
-          <skipped/>
+        <testcase name="test_getX_afterSetX_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="55" assertions="1" time="0.000107">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getX_afterSetX_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:57
+</failure>
         </testcase>
-        <testcase name="test_construct_withLargeCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="54" assertions="0" time="0.000068">
-          <skipped/>
+        <testcase name="test_getY_afterSetY_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="60" assertions="1" time="0.000148">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getY_afterSetY_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:62
+</failure>
         </testcase>
-        <testcase name="test_getAxis_withNullCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="59" assertions="0" time="0.000089">
-          <skipped/>
+        <testcase name="test_getAxis_afterSetY_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="65" assertions="1" time="0.000196">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getAxis_afterSetY_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:67
+</failure>
         </testcase>
-        <testcase name="test_getX_withNullCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="64" assertions="0" time="0.000051">
-          <skipped/>
+        <testcase name="test_getAxis_afterSetX_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="70" assertions="1" time="0.000268">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getAxis_afterSetX_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:72
+</failure>
         </testcase>
-        <testcase name="test_getY_withNullCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="69" assertions="0" time="0.000059">
-          <skipped/>
+        <testcase name="test_getAxis_afterSetXAndSetY_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="75" assertions="1" time="0.000066">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_getAxis_afterSetXAndSetY_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:77
+</failure>
         </testcase>
-        <testcase name="test_getAxis_withValidCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="74" assertions="0" time="0.000050">
-          <skipped/>
+        <testcase name="test_setX_withNegative_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="80" assertions="1" time="0.000080">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_setX_withNegative_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:82
+</failure>
         </testcase>
-        <testcase name="test_getX_withValidCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="79" assertions="0" time="0.000058">
-          <skipped/>
+        <testcase name="test_setY_withNegative_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="85" assertions="1" time="0.000151">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_setY_withNegative_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:87
+</failure>
         </testcase>
-        <testcase name="test_getY_withValidCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="84" assertions="0" time="0.000069">
-          <skipped/>
+        <testcase name="test_setX_withFalse_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="90" assertions="1" time="0.000086">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_setX_withFalse_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:92
+</failure>
         </testcase>
-        <testcase name="test_getX_afterSetX_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="89" assertions="0" time="0.000056">
-          <skipped/>
+        <testcase name="test_setY_withFalse_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="95" assertions="1" time="0.000060">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_setY_withFalse_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:97
+</failure>
         </testcase>
-        <testcase name="test_getY_afterSetY_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="94" assertions="0" time="0.000050">
-          <skipped/>
+        <testcase name="test_setY_withZero_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="100" assertions="1" time="0.000067">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_setY_withZero_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:102
+</failure>
         </testcase>
-        <testcase name="test_getAxis_afterSetY_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="99" assertions="0" time="0.000057">
-          <skipped/>
+        <testcase name="test_setX_withZero_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="105" assertions="1" time="0.000054">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_setX_withZero_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:107
+</failure>
         </testcase>
-        <testcase name="test_getAxis_afterSetX_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="104" assertions="0" time="0.000057">
-          <skipped/>
+        <testcase name="test_setX_withExpected_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="110" assertions="1" time="0.000081">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_setX_withExpected_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:112
+</failure>
         </testcase>
-        <testcase name="test_getAxis_afterSetXAndSetY_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="109" assertions="0" time="0.000058">
-          <skipped/>
-        </testcase>
-        <testcase name="test_setX_withNegative_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="114" assertions="0" time="0.000049">
-          <skipped/>
-        </testcase>
-        <testcase name="test_setY_withNegative_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="119" assertions="0" time="0.000072">
-          <skipped/>
-        </testcase>
-        <testcase name="test_setX_withFalse_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="124" assertions="0" time="0.000048">
-          <skipped/>
-        </testcase>
-        <testcase name="test_setY_withFalse_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="129" assertions="0" time="0.000059">
-          <skipped/>
-        </testcase>
-        <testcase name="test_setY_withZero_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="134" assertions="0" time="0.000108">
-          <skipped/>
-        </testcase>
-        <testcase name="test_setX_withZero_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="139" assertions="0" time="0.000092">
-          <skipped/>
-        </testcase>
-        <testcase name="test_setX_withExpected_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="144" assertions="0" time="0.000082">
-          <skipped/>
-        </testcase>
-        <testcase name="test_setY_withExpected_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="149" assertions="0" time="0.000083">
-          <skipped/>
+        <testcase name="test_setY_withExpected_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="115" assertions="1" time="0.000072">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_setY_withExpected_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:117
+</failure>
         </testcase>
       </testsuite>
-      <testsuite name="Hive\Toy\Test\Direction\Cardinal\CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" tests="40" assertions="40" errors="0" warnings="0" failures="0" skipped="0" time="0.004787">
-        <testcase name="test_right_FromNorth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="14" assertions="1" time="0.000997"/>
-        <testcase name="test_right_FromEast_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="21" assertions="1" time="0.000130"/>
-        <testcase name="test_right_FromSouth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="28" assertions="1" time="0.000106"/>
-        <testcase name="test_right_FromWest_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="35" assertions="1" time="0.000095"/>
-        <testcase name="test_right_x2FromNorth_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="42" assertions="1" time="0.000124"/>
-        <testcase name="test_right_x2FromEast_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="50" assertions="1" time="0.000306"/>
-        <testcase name="test_right_x2FromSouth_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="58" assertions="1" time="0.000125"/>
-        <testcase name="test_right_x2FromWest_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="66" assertions="1" time="0.000074"/>
-        <testcase name="test_right_x3FromNorth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="74" assertions="1" time="0.000104"/>
-        <testcase name="test_right_x3FromEast_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="83" assertions="1" time="0.000098"/>
-        <testcase name="test_right_x3FromSouth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="92" assertions="1" time="0.000108"/>
-        <testcase name="test_right_x3FromWest_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="101" assertions="1" time="0.000097"/>
-        <testcase name="test_right_x4FromNorth_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="110" assertions="1" time="0.000113"/>
-        <testcase name="test_right_x4FromEast_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="120" assertions="1" time="0.000106"/>
-        <testcase name="test_right_x4FromSouth_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="130" assertions="1" time="0.000105"/>
-        <testcase name="test_right_x4FromWest_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="140" assertions="1" time="0.000108"/>
-        <testcase name="test_right_x5FromNorth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="150" assertions="1" time="0.000100"/>
-        <testcase name="test_right_x5FromEast_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="161" assertions="1" time="0.000073"/>
-        <testcase name="test_right_x5FromSouth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="172" assertions="1" time="0.000110"/>
-        <testcase name="test_right_x5FromWest_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="183" assertions="1" time="0.000132"/>
-        <testcase name="test_left_FromNorth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="194" assertions="1" time="0.000132"/>
-        <testcase name="test_left_FromEast_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="201" assertions="1" time="0.000108"/>
-        <testcase name="test_left_FromSouth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="208" assertions="1" time="0.000105"/>
-        <testcase name="test_left_FromWest_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="215" assertions="1" time="0.000119"/>
-        <testcase name="test_left_x2FromNorth_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="222" assertions="1" time="0.000147"/>
-        <testcase name="test_left_x2FromEast_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="230" assertions="1" time="0.000094"/>
-        <testcase name="test_left_x2FromSouth_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="238" assertions="1" time="0.000087"/>
-        <testcase name="test_left_x2FromWest_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="246" assertions="1" time="0.000060"/>
-        <testcase name="test_left_x3FromNorth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="254" assertions="1" time="0.000055"/>
-        <testcase name="test_left_x3FromEast_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="263" assertions="1" time="0.000057"/>
-        <testcase name="test_left_x3FromSouth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="272" assertions="1" time="0.000054"/>
-        <testcase name="test_left_x3FromWest_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="281" assertions="1" time="0.000053"/>
-        <testcase name="test_left_x4FromNorth_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="290" assertions="1" time="0.000053"/>
-        <testcase name="test_left_x4FromEast_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="300" assertions="1" time="0.000053"/>
-        <testcase name="test_left_x4FromSouth_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="310" assertions="1" time="0.000053"/>
-        <testcase name="test_left_x4FromWest_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="320" assertions="1" time="0.000053"/>
-        <testcase name="test_left_x5FromNorth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="330" assertions="1" time="0.000054"/>
-        <testcase name="test_left_x5FromEast_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="341" assertions="1" time="0.000058"/>
-        <testcase name="test_left_x5FromSouth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="352" assertions="1" time="0.000082"/>
-        <testcase name="test_left_x5FromWest_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="363" assertions="1" time="0.000101"/>
+      <testsuite name="Hive\Toy\Test\Direction\Cardinal\CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" tests="40" assertions="40" errors="0" warnings="0" failures="0" skipped="0" time="0.005219">
+        <testcase name="test_right_FromNorth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="14" assertions="1" time="0.001481"/>
+        <testcase name="test_right_FromEast_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="21" assertions="1" time="0.000118"/>
+        <testcase name="test_right_FromSouth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="28" assertions="1" time="0.000058"/>
+        <testcase name="test_right_FromWest_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="35" assertions="1" time="0.000056"/>
+        <testcase name="test_right_x2FromNorth_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="42" assertions="1" time="0.000052"/>
+        <testcase name="test_right_x2FromEast_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="50" assertions="1" time="0.000065"/>
+        <testcase name="test_right_x2FromSouth_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="58" assertions="1" time="0.000083"/>
+        <testcase name="test_right_x2FromWest_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="66" assertions="1" time="0.000070"/>
+        <testcase name="test_right_x3FromNorth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="74" assertions="1" time="0.000069"/>
+        <testcase name="test_right_x3FromEast_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="83" assertions="1" time="0.000069"/>
+        <testcase name="test_right_x3FromSouth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="92" assertions="1" time="0.000069"/>
+        <testcase name="test_right_x3FromWest_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="101" assertions="1" time="0.000068"/>
+        <testcase name="test_right_x4FromNorth_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="110" assertions="1" time="0.000071"/>
+        <testcase name="test_right_x4FromEast_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="120" assertions="1" time="0.000088"/>
+        <testcase name="test_right_x4FromSouth_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="130" assertions="1" time="0.000162"/>
+        <testcase name="test_right_x4FromWest_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="140" assertions="1" time="0.000089"/>
+        <testcase name="test_right_x5FromNorth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="150" assertions="1" time="0.000082"/>
+        <testcase name="test_right_x5FromEast_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="161" assertions="1" time="0.000078"/>
+        <testcase name="test_right_x5FromSouth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="172" assertions="1" time="0.000078"/>
+        <testcase name="test_right_x5FromWest_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="183" assertions="1" time="0.000154"/>
+        <testcase name="test_left_FromNorth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="194" assertions="1" time="0.000356"/>
+        <testcase name="test_left_FromEast_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="201" assertions="1" time="0.000121"/>
+        <testcase name="test_left_FromSouth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="208" assertions="1" time="0.000060"/>
+        <testcase name="test_left_FromWest_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="215" assertions="1" time="0.000092"/>
+        <testcase name="test_left_x2FromNorth_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="222" assertions="1" time="0.000073"/>
+        <testcase name="test_left_x2FromEast_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="230" assertions="1" time="0.000214"/>
+        <testcase name="test_left_x2FromSouth_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="238" assertions="1" time="0.000080"/>
+        <testcase name="test_left_x2FromWest_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="246" assertions="1" time="0.000061"/>
+        <testcase name="test_left_x3FromNorth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="254" assertions="1" time="0.000061"/>
+        <testcase name="test_left_x3FromEast_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="263" assertions="1" time="0.000060"/>
+        <testcase name="test_left_x3FromSouth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="272" assertions="1" time="0.000057"/>
+        <testcase name="test_left_x3FromWest_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="281" assertions="1" time="0.000057"/>
+        <testcase name="test_left_x4FromNorth_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="290" assertions="1" time="0.000061"/>
+        <testcase name="test_left_x4FromEast_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="300" assertions="1" time="0.000077"/>
+        <testcase name="test_left_x4FromSouth_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="310" assertions="1" time="0.000289"/>
+        <testcase name="test_left_x4FromWest_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="320" assertions="1" time="0.000112"/>
+        <testcase name="test_left_x5FromNorth_isWest" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="330" assertions="1" time="0.000081"/>
+        <testcase name="test_left_x5FromEast_isNorth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="341" assertions="1" time="0.000089"/>
+        <testcase name="test_left_x5FromSouth_isEast" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="352" assertions="1" time="0.000080"/>
+        <testcase name="test_left_x5FromWest_isSouth" class="Hive\Toy\Test\Direction\Cardinal\CardinalTest" classname="Hive.Toy.Test.Direction.Cardinal.CardinalTest" file="/Users/jamie/Containers/toy/app/tests/unit/Direction/CardinalTest.php" line="363" assertions="1" time="0.000077"/>
       </testsuite>
-      <testsuite name="Hive\Toy\Test\DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" tests="9" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.001562">
-        <testcase name="test_set_withValidArgument_isValid" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="12" assertions="1" time="0.000087"/>
-        <testcase name="test_set_withEmptyArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="18" assertions="1" time="0.000404"/>
-        <testcase name="test_set_withIntegerArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="24" assertions="1" time="0.000289"/>
-        <testcase name="test_set_withNegativeArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="30" assertions="1" time="0.000181"/>
-        <testcase name="test_set_withFalseArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="36" assertions="1" time="0.000125"/>
-        <testcase name="test_set_withNullArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="42" assertions="1" time="0.000105"/>
-        <testcase name="test_set_withInvalidArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="48" assertions="1" time="0.000104"/>
-        <testcase name="test_get_withoutSet_isInvalid" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="54" assertions="1" time="0.000167"/>
-        <testcase name="test_get_afterSetValidArguments_isValid" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="60" assertions="1" time="0.000100"/>
+      <testsuite name="Hive\Toy\Test\DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" tests="9" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.002365">
+        <testcase name="test_set_withValidArgument_isValid" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="12" assertions="1" time="0.000111"/>
+        <testcase name="test_set_withEmptyArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="18" assertions="1" time="0.000303"/>
+        <testcase name="test_set_withIntegerArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="24" assertions="1" time="0.000662"/>
+        <testcase name="test_set_withNegativeArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="30" assertions="1" time="0.000130"/>
+        <testcase name="test_set_withFalseArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="36" assertions="1" time="0.000069"/>
+        <testcase name="test_set_withNullArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="42" assertions="1" time="0.000065"/>
+        <testcase name="test_set_withInvalidArgument_throwsException" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="48" assertions="1" time="0.000059"/>
+        <testcase name="test_get_withoutSet_isInvalid" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="54" assertions="1" time="0.000710"/>
+        <testcase name="test_get_afterSetValidArguments_isValid" class="Hive\Toy\Test\DirectionTest" classname="Hive.Toy.Test.DirectionTest" file="/Users/jamie/Containers/toy/app/tests/unit/DirectionTest.php" line="60" assertions="1" time="0.000255"/>
       </testsuite>
-      <testsuite name="Hive\Toy\Test\RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" tests="6" assertions="0" errors="0" warnings="0" failures="0" skipped="6" time="0.000542">
-        <testcase name="test_construct_withValidArguments_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="13" assertions="0" time="0.000077">
+      <testsuite name="Hive\Toy\Test\RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" tests="6" assertions="0" errors="0" warnings="0" failures="0" skipped="6" time="0.000562">
+        <testcase name="test_construct_withValidArguments_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="13" assertions="0" time="0.000249">
           <skipped/>
         </testcase>
-        <testcase name="test_place_withValidArguments_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="18" assertions="0" time="0.000101">
+        <testcase name="test_place_withValidArguments_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="18" assertions="0" time="0.000057">
           <skipped/>
         </testcase>
-        <testcase name="test_place_offTheBoard_isInvalid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="23" assertions="0" time="0.000105">
+        <testcase name="test_place_offTheBoard_isInvalid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="23" assertions="0" time="0.000083">
           <skipped/>
         </testcase>
-        <testcase name="test_report_afterPlace_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="28" assertions="0" time="0.000067">
+        <testcase name="test_report_afterPlace_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="28" assertions="0" time="0.000053">
           <skipped/>
         </testcase>
-        <testcase name="test_report_afterRight_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="33" assertions="0" time="0.000101">
+        <testcase name="test_report_afterRight_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="33" assertions="0" time="0.000066">
           <skipped/>
         </testcase>
-        <testcase name="test_report_afterLeft_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="38" assertions="0" time="0.000090">
+        <testcase name="test_report_afterLeft_isValid" class="Hive\Toy\Test\RobotTest" classname="Hive.Toy.Test.RobotTest" file="/Users/jamie/Containers/toy/app/tests/unit/RobotTest.php" line="38" assertions="0" time="0.000054">
           <skipped/>
         </testcase>
       </testsuite>
