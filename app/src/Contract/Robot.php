@@ -28,4 +28,10 @@ interface Robot
      * Rotate 90 degrees to the right
      */
     public function right(): void;
+
+    /**
+     * Report the current position of the robot
+     * @return string
+     */
+    public function report(): string;
 }
