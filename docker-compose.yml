@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  toy:
+    container_name: toy
+    build: docker
+    tty: true
+    restart: on-failure
+    volumes:
+      - ./app:/home/dev/app:cached
+      - ./data:/home/dev/data:delegated
+      - ./log:/home/dev/log
+      - ~/.ssh:/home/dev/.ssh
+    env_file:
+      - ./docker/env.local
