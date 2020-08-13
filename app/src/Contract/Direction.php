@@ -18,5 +18,5 @@ interface Direction
      * Set the current direction the object is facing.
      * @param string $direction
      */
-    public function set(string $direction): void;
+    public function set(string $direction): self;
 }
