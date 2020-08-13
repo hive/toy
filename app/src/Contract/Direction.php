@@ -3,10 +3,10 @@
 namespace Hive\Toy\Contract;
 
 /**
- * Used to navigate the facing of an object.
+ * Used to navigate and store the direction an object is facing.
  * @package Hive\Toy\Contract
  */
-interface Navigation
+interface Direction
 {
     /**
      * Face to the left
