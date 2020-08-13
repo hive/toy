@@ -4,64 +4,30 @@ namespace Hive\Toy\Test;
 
 class BoardTest extends \PHPUnit\Framework\TestCase
 {
+    private $board;
+
     public function setUp(): void
     {
-        $this->markTestIncomplete();
+        $this->board = new \Hive\Toy\Board();
     }
 
     // The default values
     public function test_construct_withNullCoordinateArguments_isValid()
     {
-        $this->fail('soon');
+        try {
+            new \Hive\Toy\Board();
+        } catch (\Exception $e) {
+            $this->fail();
+        }
+
     }
 
-    public function test_construct_withValidCoordinateArguments_isValid()
+    public function test_getAxis_withNullCoordinateArguments_isInvalid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withStringCoordinateArguments_isInvalid()
-    {
-        $this->fail('soon');
-    }
-
-    public function test_construct_withFalseCoordinateArguments_isInvalid()
-    {
-        $this->fail('soon');
-    }
-
-    // Zero the number
-    public function test_construct_withZeroCoordinateArguments_isInvalid()
-    {
-        $this->fail('soon');
-    }
-
-    public function test_construct_withZeroXCoordinateArgument_isInvalid()
-    {
-        $this->fail('soon');
-    }
-
-    public function test_construct_withZeroYCoordinateArgument_isInvalid()
-    {
-        $this->fail('soon');
-    }
-
-    public function test_construct_withNegativeCoordinateArguments_isInvalid()
-    {
-        $this->fail('soon');
-    }
-
-    public function test_construct_withLargeCoordinateArguments_isValid()
-    {
-        $this->fail('soon');
-    }
-
-    public function test_getAxis_withNullCoordinateArguments_isValid()
-    {
-        $this->fail('soon');
-    }
-
-    public function test_getX_withNullCoordinateArguments_isValid()
+    public function test_getX_withNullCoordinateArguments_isInvalid()
     {
         $this->fail('soon');
     }
