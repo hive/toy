@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="21" assertions="21" errors="0" warnings="0" failures="20" skipped="0" time="0.003814">
+    <testsuite name="Sanity" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.001803">
+      <testsuite name="Hive\Toy\Test\SanityTest" file="/Users/jamie/Containers/toy/app/tests/unit/SanityTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.001803">
+        <testcase name="test_sanity_isTrue" class="Hive\Toy\Test\SanityTest" classname="Hive.Toy.Test.SanityTest" file="/Users/jamie/Containers/toy/app/tests/unit/SanityTest.php" line="7" assertions="1" time="0.001803"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="All" tests="20" assertions="20" errors="0" warnings="0" failures="20" skipped="0" time="0.002011">
+      <testsuite name="Hive\Toy\Test\BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" tests="20" assertions="20" errors="0" warnings="0" failures="20" skipped="0" time="0.002011">
+        <testcase name="test_construct_withNullCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="8" assertions="1" time="0.000242">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withNullCoordinateArguments_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:10
+</failure>
+        </testcase>
+        <testcase name="test_construct_withValidCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="13" assertions="1" time="0.000087">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withValidCoordinateArguments_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:15
+</failure>
+        </testcase>
+        <testcase name="test_construct_withStringCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="18" assertions="1" time="0.000064">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withStringCoordinateArguments_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:20
+</failure>
+        </testcase>
+        <testcase name="test_construct_withFalseCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="23" assertions="1" time="0.000056">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withFalseCoordinateArguments_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:25
+</failure>
+        </testcase>
+        <testcase name="test_construct_withZeroCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="29" assertions="1" time="0.000059">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withZeroCoordinateArguments_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:31
+</failure>
+        </testcase>
+        <testcase name="test_construct_withZeroXCoordinateArgument_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="34" assertions="1" time="0.000060">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withZeroXCoordinateArgument_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:36
+</failure>
+        </testcase>
+        <testcase name="test_construct_withZeroYCoordinateArgument_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="39" assertions="1" time="0.000061">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withZeroYCoordinateArgument_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:41
+</failure>
+        </testcase>
+        <testcase name="test_construct_withNegativeCoordinateArguments_isInvalid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="44" assertions="1" time="0.000065">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withNegativeCoordinateArguments_isInvalid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:46
+</failure>
+        </testcase>
+        <testcase name="test_construct_withLargeCoordinateArguments_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="49" assertions="1" time="0.000054">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withLargeCoordinateArguments_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:51
+</failure>
+        </testcase>
+        <testcase name="test_construct_withNullCoordinateArgumentsGetAxis_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="54" assertions="1" time="0.000067">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withNullCoordinateArgumentsGetAxis_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:56
+</failure>
+        </testcase>
+        <testcase name="test_construct_withNullCoordinateArgumentsGetX_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="59" assertions="1" time="0.000060">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withNullCoordinateArgumentsGetX_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:61
+</failure>
+        </testcase>
+        <testcase name="test_construct_withNullCoordinateArgumentsGetY_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="64" assertions="1" time="0.000053">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withNullCoordinateArgumentsGetY_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:66
+</failure>
+        </testcase>
+        <testcase name="test_construct_withValidCoordinateArgumentsGetAxis_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="69" assertions="1" time="0.000283">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withValidCoordinateArgumentsGetAxis_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:71
+</failure>
+        </testcase>
+        <testcase name="test_construct_withValidCoordinateArgumentsGetX_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="74" assertions="1" time="0.000119">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withValidCoordinateArgumentsGetX_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:76
+</failure>
+        </testcase>
+        <testcase name="test_construct_withValidCoordinateArgumentsGetY_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="79" assertions="1" time="0.000195">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withValidCoordinateArgumentsGetY_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:81
+</failure>
+        </testcase>
+        <testcase name="test_construct_withSetXGetX_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="84" assertions="1" time="0.000144">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withSetXGetX_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:86
+</failure>
+        </testcase>
+        <testcase name="test_construct_withSetYGetY_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="89" assertions="1" time="0.000130">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withSetYGetY_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:91
+</failure>
+        </testcase>
+        <testcase name="test_construct_withSetYGetAxis_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="94" assertions="1" time="0.000077">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withSetYGetAxis_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:96
+</failure>
+        </testcase>
+        <testcase name="test_construct_withSetXGetAxis_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="99" assertions="1" time="0.000068">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withSetXGetAxis_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:101
+</failure>
+        </testcase>
+        <testcase name="test_construct_withSetXandYGetAxis_isValid" class="Hive\Toy\Test\BoardTest" classname="Hive.Toy.Test.BoardTest" file="/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php" line="104" assertions="1" time="0.000068">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Hive\Toy\Test\BoardTest::test_construct_withSetXandYGetAxis_isValid
+soon
+
+/Users/jamie/Containers/toy/app/tests/unit/BoardTest.php:106
+</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

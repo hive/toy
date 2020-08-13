@@ -1,0 +1,46 @@
+{
+  "name": "hive/toy",
+  "description": "Pack for parsing toy commands.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Jamie",
+      "email": "jamie.peake@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Hive\\Toy\\": ["src/"]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hive\\Toy\\Test\\": ["tests/unit/"]
+    }
+  },
+  "require": {
+    "php": ">=7.3"
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "branch-alias": {
+      "dev-feature/*": "1.0.x-dev"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.3"
+    }
+  },
+  "scripts": {
+    "example": [
+      "php bin/run.php  ../data/example4.txt"
+    ],
+    "test": [
+      "vendor/bin/phpunit --coverage-text --configuration build/phpunit.xml"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  }
+}
