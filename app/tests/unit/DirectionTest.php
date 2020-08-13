@@ -12,7 +12,7 @@ class DirectionTest extends \PHPUnit\Framework\TestCase
     public function test_set_withValidArgument_isValid()
     {
         $this->direction->set('FORWARD');
-        $this->assertEquals('FORWARD', $this->direction->get());
+        $this->assertEquals('FORWARD', $this->direction->get()['DIRECTION']);
     }
 
     public function test_set_withEmptyArgument_throwsException()
@@ -60,7 +60,7 @@ class DirectionTest extends \PHPUnit\Framework\TestCase
     public function test_get_afterSetValidArguments_isValid()
     {
         $this->direction->set('BACKWARD');
-        $this->assertEquals('BACKWARD', $this->direction->get());
+        $this->assertEquals('BACKWARD', $this->direction->get()['DIRECTION']);
     }
 }
 

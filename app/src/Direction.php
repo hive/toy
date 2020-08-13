@@ -20,7 +20,7 @@ class Direction implements \Hive\Toy\Contract\Direction
 
 
     /**
-     * The Keys for the Matrix. 
+     * The Keys for the Matrix.
      */
     const KEYS = [
         0 => 'FORWARD',
@@ -54,32 +54,20 @@ class Direction implements \Hive\Toy\Contract\Direction
             throw new Exception\DirectionIsNotSet();
         }
 
-        return self::OPTIONS[$this->key()];
+        return static::OPTIONS[$this->current];
     }
 
     /**
      * Set the direction
      * @param string $direction
-     * @return Contract\Direction
      * @throws Exception\InvalidDirection
      */
-    public function set(string $direction): Contract\Direction
+    public function set(string $direction): void
     {
-        if (!in_array($direction, self::KEYS)) {
+        if (!in_array($direction, static::KEYS)) {
             throw new Exception\InvalidDirection($direction);
         }
 
-        $this->current = array_search($direction, self::KEYS);
-
-        return $this;
-    }
-
-    /**
-     * Returns the current keu
-     * @return string
-     */
-    private function key() : string
-    {
-        return self::KEYS[$this->current];
+        $this->current = array_search($direction, static::KEYS);
     }
 }

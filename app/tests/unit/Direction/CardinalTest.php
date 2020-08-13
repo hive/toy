@@ -15,28 +15,28 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
     {
         $this->direction->set('NORTH');
         $this->direction->right();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_FromEast_isSouth()
     {
         $this->direction->set('EAST');
         $this->direction->right();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_FromSouth_isWest()
     {
         $this->direction->set('SOUTH');
         $this->direction->right();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_FromWest_isNorth()
     {
         $this->direction->set('WEST');
         $this->direction->right();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x2FromNorth_isSouth()
@@ -44,7 +44,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->set('NORTH');
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x2FromEast_isWest()
@@ -52,7 +52,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->set('EAST');
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x2FromSouth_isNorth()
@@ -60,7 +60,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->set('SOUTH');
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x2FromWest_isEast()
@@ -68,7 +68,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->set('WEST');
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x3FromNorth_isWest()
@@ -77,7 +77,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x3FromEast_isNorth()
@@ -86,7 +86,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x3FromSouth_isEast()
@@ -95,7 +95,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x3FromWest_isSouth()
@@ -104,7 +104,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x4FromNorth_isNorth()
@@ -114,7 +114,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x4FromEast_isEast()
@@ -124,7 +124,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x4FromSouth_isSouth()
@@ -134,7 +134,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x4FromWest_isWest()
@@ -144,7 +144,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x5FromNorth_isEast()
@@ -155,7 +155,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x5FromEast_isSouth()
@@ -166,7 +166,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x5FromSouth_isWest()
@@ -177,7 +177,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_right_x5FromWest_isNorth()
@@ -188,35 +188,35 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->right();
         $this->direction->right();
         $this->direction->right();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_FromNorth_isWest()
     {
         $this->direction->set('NORTH');
         $this->direction->left();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_FromEast_isNorth()
     {
         $this->direction->set('EAST');
         $this->direction->left();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_FromSouth_isEast()
     {
         $this->direction->set('SOUTH');
         $this->direction->left();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_FromWest_isSouth()
     {
         $this->direction->set('WEST');
         $this->direction->left();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x2FromNorth_isSouth()
@@ -224,7 +224,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->set('NORTH');
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x2FromEast_isWest()
@@ -232,7 +232,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->set('EAST');
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x2FromSouth_isNorth()
@@ -240,7 +240,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->set('SOUTH');
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x2FromWest_isEast()
@@ -248,7 +248,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->set('WEST');
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x3FromNorth_isEast()
@@ -257,7 +257,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x3FromEast_isSouth()
@@ -266,7 +266,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x3FromSouth_isWest()
@@ -275,7 +275,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x3FromWest_isNorth()
@@ -284,7 +284,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x4FromNorth_isNorth()
@@ -294,7 +294,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x4FromEast_isEast()
@@ -304,7 +304,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x4FromSouth_isSouth()
@@ -314,7 +314,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x4FromWest_isWest()
@@ -324,7 +324,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x5FromNorth_isWest()
@@ -335,7 +335,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('WEST', $this->direction->get());
+        $this->assertEquals('WEST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x5FromEast_isNorth()
@@ -346,7 +346,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('NORTH', $this->direction->get());
+        $this->assertEquals('NORTH', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x5FromSouth_isEast()
@@ -357,7 +357,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('EAST', $this->direction->get());
+        $this->assertEquals('EAST', $this->direction->get()['DIRECTION']);
     }
 
     public function test_left_x5FromWest_isSouth()
@@ -368,7 +368,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
         $this->direction->left();
         $this->direction->left();
         $this->direction->left();
-        $this->assertEquals('SOUTH', $this->direction->get());
+        $this->assertEquals('SOUTH', $this->direction->get()['DIRECTION']);
     }
 }
 
