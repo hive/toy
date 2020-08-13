@@ -1,5 +1,5 @@
 <?php
-namespace Xplor\Test\Bootstrap;
+namespace Hive\Test\Bootstrap;
 
 require('vendor/autoload.php');
 
