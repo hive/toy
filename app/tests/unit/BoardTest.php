@@ -51,57 +51,97 @@ class BoardTest extends \PHPUnit\Framework\TestCase
         $this->fail('soon');
     }
 
-    public function test_construct_withNullCoordinateArgumentsGetAxis_isValid()
+    public function test_getAxis_withNullCoordinateArguments_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withNullCoordinateArgumentsGetX_isValid()
+    public function test_getX_withNullCoordinateArguments_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withNullCoordinateArgumentsGetY_isValid()
+    public function test_getY_withNullCoordinateArguments_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withValidCoordinateArgumentsGetAxis_isValid()
+    public function test_getAxis_withValidCoordinateArguments_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withValidCoordinateArgumentsGetX_isValid()
+    public function test_getX_withValidCoordinateArguments_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withValidCoordinateArgumentsGetY_isValid()
+    public function test_getY_withValidCoordinateArguments_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withSetXGetX_isValid()
+    public function test_getX_afterSetX_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withSetYGetY_isValid()
+    public function test_getY_afterSetY_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withSetYGetAxis_isValid()
+    public function test_getAxis_afterSetY_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withSetXGetAxis_isValid()
+    public function test_getAxis_afterSetX_isValid()
     {
         $this->fail('soon');
     }
 
-    public function test_construct_withSetXandYGetAxis_isValid()
+    public function test_getAxis_afterSetXAndSetY_isValid()
+    {
+        $this->fail('soon');
+    }
+
+    public function test_setX_withNegative_isInvalid()
+    {
+        $this->fail('soon');
+    }
+
+    public function test_setY_withNegative_isInvalid()
+    {
+        $this->fail('soon');
+    }
+
+    public function test_setX_withFalse_isInvalid()
+    {
+        $this->fail('soon');
+    }
+
+    public function test_setY_withFalse_isInvalid()
+    {
+        $this->fail('soon');
+    }
+
+    public function test_setY_withZero_isInvalid()
+    {
+        $this->fail('soon');
+    }
+
+    public function test_setX_withZero_isInvalid()
+    {
+        $this->fail('soon');
+    }
+
+    public function test_setX_withExpected_isValid()
+    {
+        $this->fail('soon');
+    }
+
+    public function test_setY_withExpected_isValid()
     {
         $this->fail('soon');
     }
