@@ -6,7 +6,7 @@ namespace Hive\Toy;
  * Class Direction
  * @package Hive\Toy
  */
-class Direction implements \Hive\Toy\Contract\Direction
+class Direction implements Contract\Direction
 {
     /**
      * How much to alter the direction by.
