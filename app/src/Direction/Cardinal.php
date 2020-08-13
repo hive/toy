@@ -17,7 +17,11 @@ class Cardinal extends \Hive\Toy\Direction
      */
     public function left(): void
     {
-
+        if (isset(self::CARDINAL[$this->current - self::MOD])) {
+            $this->current = $this->current - self::MOD;
+        } else {
+            $this->current = array_key_last(self::CARDINAL);
+        }
     }
 
     /**

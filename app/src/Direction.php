@@ -16,18 +16,27 @@ class Direction implements \Hive\Toy\Contract\Direction
     /**
      * @var integer current direction index
      */
-    private $current = null;
+    protected $current = null;
+
+
+    /**
+     * The Keys for the Matrix. 
+     */
+    const KEYS = [
+        0 => 'FORWARD',
+        1 => 'BACKWARD'
+    ];
 
     /**
      * Matrix of each of the options and what they mean to the robots navigation
      */
     const OPTIONS = [
-        'FORWARD' => [
+        0 => [
             'DIRECTION' => 'FORWARD',
             'AXIS' => 'x',
             'MOD' => +self::MOD
         ],
-        'BACKWARD' => [
+        1 => [
             'DIRECTION' => 'BACKWARD',
             'AXIS' => 'x',
             'MOD' => -self::MOD
@@ -45,7 +54,7 @@ class Direction implements \Hive\Toy\Contract\Direction
             throw new Exception\DirectionIsNotSet();
         }
 
-        return self::OPTIONS[$this->current];
+        return self::OPTIONS[$this->key()];
     }
 
     /**
@@ -56,12 +65,21 @@ class Direction implements \Hive\Toy\Contract\Direction
      */
     public function set(string $direction): Contract\Direction
     {
-        if (!array_key_exists($direction, self::OPTIONS)) {
+        if (!in_array($direction, self::KEYS)) {
             throw new Exception\InvalidDirection($direction);
         }
 
-        $this->current = $direction;
+        $this->current = array_search($direction, self::KEYS);
 
         return $this;
+    }
+
+    /**
+     * Returns the current keu
+     * @return string
+     */
+    private function key() : string
+    {
+        return self::KEYS[$this->current];
     }
 }
