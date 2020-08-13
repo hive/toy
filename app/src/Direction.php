@@ -12,7 +12,7 @@ class Direction implements \Hive\Toy\Contract\Direction
      * How much to alter the direction by.
      */
     const MOD = 1;
-    
+
     /**
      * @var integer current direction index
      */
@@ -61,5 +61,7 @@ class Direction implements \Hive\Toy\Contract\Direction
         }
 
         $this->current = $direction;
+
+        return $this;
     }
 }

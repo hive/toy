@@ -9,7 +9,7 @@ namespace Hive\Toy\Direction;
  *
  * @package Hive\Toy
  */
-class Cardinal extends Direction implements Contract\Direction
+class Cardinal extends \Hive\Toy\Direction
 {
 
     /**

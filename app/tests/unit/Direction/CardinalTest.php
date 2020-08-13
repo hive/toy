@@ -8,7 +8,7 @@ class CardinalTest extends \PHPUnit\Framework\TestCase
 
     public function setUp(): void
     {
-        $this->direction = new \Hive\Toy\Direction();
+        $this->direction = new \Hive\Toy\Direction\Cardinal();
     }
 
     public function test_right_FromNorth_isEast()
